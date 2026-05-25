@@ -3,12 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#10706b">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Escore Lombar">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icons/icon-180.png">
 <title>Escore Lombar Inteligente</title>
 <style>
 :root{
@@ -480,6 +474,7 @@ th{background:#eef3f6;color:#243044}
   </div>
 
   <div class="footer-note sources">
+    <strong>Referência técnica:</strong> Prof. Dr. Gilmar Moraes Santos - LAPEQ/CEFID/UDESC.<br>
     Fontes de referência: <a href="https://www.sralab.org/rehabilitation-measures/numeric-pain-rating-scale">NPRS/END</a>,
     <a href="https://www.sralab.org/rehabilitation-measures/patient-specific-functional-scale">PSFS</a>,
     <a href="https://www.sralab.org/rehabilitation-measures/oswestry-disability-index">ODI scoring</a>,
@@ -1075,11 +1070,6 @@ window.addEventListener("resize",()=>drawAll());
 buildRows();
 calculateAndShow();
 renderHistory();
-if("serviceWorker" in navigator){
-  window.addEventListener("load",()=>{
-    navigator.serviceWorker.register("service-worker.js").catch(()=>{});
-  });
-}
 </script>
 </body>
 </html>
